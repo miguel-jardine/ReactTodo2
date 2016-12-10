@@ -4,7 +4,7 @@ var
 
     {Route, Router, IndexRoute, hashHistory}    = require("react-router"),
 
-    Main        = require("Main"),
+    TodoApp        = require("TodoApp"),
 
     end_var_def = [];
 
@@ -16,9 +16,6 @@ $(document).foundation();
 require("style!css!sass!applicationStyles");
 
 ReactDOM.render(
-    <Router history={hashHistory}>
-        <Route path="/" component={Main} >
-        </Route>
-    </Router>,
+    <TodoApp />,
     document.getElementById("app")
 );
